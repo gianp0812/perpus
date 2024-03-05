@@ -22,7 +22,7 @@ if ($level == 'anggota') {
         <div class="card-body px-0 pb-2">
           <button data-bs-toggle="modal" data-bs-target="#tambahkategori" class="btn btn-success btn-sm ms-3  ">+ Tambah Kategori</button>
           <div class="table-responsive p-0">
-            <table class="table align-items-center mb-0">
+            <table class="table align-items-center mb-0" id="kategori">
               <thead class='text-center'>
                 <tr>
                   <th>No</th>
@@ -163,3 +163,9 @@ if ($level == 'anggota') {
     </div>
   </div>
 </div>
+
+<script>
+  $(document).ready(function() {
+    let table = new DataTable('#kategori');
+  });
+</script>
